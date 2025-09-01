@@ -9,10 +9,12 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           {/* Restaurant Info */}
           <div className="space-y-4">
-            <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-gradient-primary rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-lg">M</span>
-              </div>
+            <div className="flex items-center space-x-3">
+              <img
+                src="/logo.png"
+                alt="The Moss Karen Logo"
+                className="h-10 w-auto"
+              />
               <div>
                 <h3 className="text-xl font-bold">The Moss Karen</h3>
                 <p className="text-sm opacity-80">Restaurant & Bar</p>
