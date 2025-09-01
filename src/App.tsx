@@ -61,7 +61,7 @@ const App = () => (
             href="/contact"
             className="bg-white text-primary px-4 py-3 rounded-full shadow-lg border border-border hover:bg-white/90 transition"
           >
-            Chat with Us
+            Email Us
           </a>
         </div>
       </>
