@@ -9,6 +9,7 @@ import MenuPage from "./pages/Menu";
 import LocationPage from "./pages/Location";
 import ReservationsPage from "./pages/Reservations";
 import NotFound from "./pages/NotFound";
+import Contact from "@/pages/Contact";
 
 const queryClient = new QueryClient();
 
@@ -24,6 +25,7 @@ const App = () => (
           <Route path="/menu" element={<MenuPage />} />
           <Route path="/location" element={<LocationPage />} />
           <Route path="/reservations" element={<ReservationsPage />} />
+          <Route path="/contact" element={<Contact />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
