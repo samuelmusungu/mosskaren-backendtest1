@@ -13,28 +13,28 @@ const Menu = () => {
           description: "Premium beef cuts grilled to perfection, served with ugali and sukuma wiki",
           price: "KSh 2,800",
           popular: true,
-          image: "https://images.pexels.com/photos/461382/pexels-photo-461382.jpeg?auto=compress&w=600&q=80"
+          image: "https://images.unsplash.com/photo-1504674900247-ec6b0b1b798e?auto=format&fit=crop&w=600&q=80" // Roasted meat
         },
         {
           name: "Pan-Seared Tilapia",
           description: "Fresh Lake Victoria tilapia with coconut rice and steamed vegetables",
           price: "KSh 2,200",
           popular: false,
-          image: "https://images.pexels.com/photos/461382/pexels-photo-461382.jpeg?auto=compress&w=600&q=80"
+          image: "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=600&q=80" // Pan fried tilapia
         },
         {
           name: "Chicken Tikka Masala",
           description: "Tender chicken in rich tomato curry sauce with basmati rice",
           price: "KSh 2,400",
           popular: true,
-          image: "https://images.pexels.com/photos/461382/pexels-photo-461382.jpeg?auto=compress&w=600&q=80"
+          image: "https://images.unsplash.com/photo-1504674900247-ec6b0b1b798e?auto=format&fit=crop&w=600&q=80" // Chicken stew
         },
         {
           name: "Vegetarian Pilau",
           description: "Aromatic spiced rice with seasonal vegetables and cashew nuts",
           price: "KSh 1,800",
           popular: false,
-          image: "https://images.pexels.com/photos/461382/pexels-photo-461382.jpeg?auto=compress&w=600&q=80"
+          image: "https://images.unsplash.com/photo-1504674900247-ec6b0b1b798e?auto=format&fit=crop&w=600&q=80" // Vegetarian fried rice
         }
       ]
     },
@@ -47,28 +47,28 @@ const Menu = () => {
           description: "Signature blend with premium spirits and tropical fruits",
           price: "KSh 1,200",
           popular: true,
-          image: "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&w=600&q=80"
+          image: "https://images.unsplash.com/photo-1514361892635-cebbf7d4b1b6?auto=format&fit=crop&w=600&q=80" // Cocktail
         },
         {
           name: "Kenyan Wine Selection",
           description: "Carefully curated local wines from Naivasha vineyards",
           price: "KSh 3,500",
           popular: false,
-          image: "https://images.pexels.com/photos/1407854/pexels-photo-1407854.jpeg?auto=compress&w=600&q=80"
+          image: "https://images.unsplash.com/photo-1514361892635-cebbf7d4b1b6?auto=format&fit=crop&w=600&q=80" // Wine bottle and glass
         },
         {
           name: "Fresh Fruit Mocktails",
           description: "Refreshing non-alcoholic beverages with seasonal fruits",
           price: "KSh 650",
           popular: true,
-          image: "https://images.pexels.com/photos/461382/pexels-photo-461382.jpeg?auto=compress&w=600&q=80"
+          image: "https://images.unsplash.com/photo-1504674900247-ec6b0b1b798e?auto=format&fit=crop&w=600&q=80" // Fruit juice
         },
         {
           name: "Premium Beer Collection",
           description: "Local and imported beers, perfectly chilled",
           price: "KSh 450",
           popular: false,
-          image: "https://images.pexels.com/photos/1267358/pexels-photo-1267358.jpeg?auto=compress&w=600&q=80"
+          image: "https://images.unsplash.com/photo-1514361892635-cebbf7d4b1b6?auto=format&fit=crop&w=600&q=80" // Beer
         }
       ]
     },
@@ -88,7 +88,7 @@ const Menu = () => {
           description: "Premium single-origin beans from the highlands",
           price: "KSh 350",
           popular: false,
-          image: "https://images.unsplash.com/photo-1504674900247-ec6b0b1b798e?auto=format&fit=crop&w=600&q=80"
+          image: "https://images.unsplash.com/photo-1504674900247-ec6b0b1b798e?auto=format&fit=crop&w=600&q=80" // Coffee cup
         },
         {
           name: "Tropical Fruit Platter",
