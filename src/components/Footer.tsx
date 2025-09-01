@@ -101,19 +101,25 @@ const Footer = () => {
               <p className="text-sm opacity-80 mb-3">
                 Get updates on specials, events, and exclusive offers.
               </p>
-              <form className="flex flex-col sm:flex-row items-center gap-3">
-                <input
-                  type="email"
-                  placeholder="Your email"
-                  className="px-4 py-2 rounded-md bg-background text-foreground border border-border w-full sm:w-auto flex-grow"
-                />
-                <button
-                  type="submit"
-                  className="px-4 py-2 bg-primary text-white rounded-md hover:bg-primary/90 transition-colors"
-                >
-                  Subscribe
-                </button>
-              </form>
+              <form
+  action="https://formspree.io/f/mblakaqn"
+  method="POST"
+  className="flex flex-col sm:flex-row items-center gap-3"
+>
+  <input
+    type="email"
+    name="email"
+    required
+    placeholder="Your email"
+    className="px-4 py-2 rounded-md bg-background text-foreground border border-border w-full sm:w-auto flex-grow"
+  />
+  <button
+    type="submit"
+    className="px-4 py-2 bg-primary text-white rounded-md hover:bg-primary/90 transition-colors"
+  >
+    Subscribe
+  </button>
+</form>
             </div>
 
             <div className="space-y-2 mt-6">

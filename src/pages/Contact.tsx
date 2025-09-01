@@ -1,7 +1,9 @@
+import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { toast } from "sonner";
 
 const Contact = () => {
+  const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -23,6 +25,7 @@ const Contact = () => {
       if (res.ok) {
         toast.success("Message sent successfully!");
         form.reset();
+        navigate("/thank-you");
       } else {
         toast.error("Something went wrong. Please try again.");
       }
@@ -46,9 +49,9 @@ const Contact = () => {
             <input
               type="text"
               name="name"
-              required
               placeholder="Your name"
               className="w-full px-4 py-2 border border-border rounded-md bg-card text-foreground"
+              required
             />
           </div>
           <div>
@@ -56,9 +59,9 @@ const Contact = () => {
             <input
               type="email"
               name="email"
-              required
               placeholder="you@example.com"
               className="w-full px-4 py-2 border border-border rounded-md bg-card text-foreground"
+              required
             />
           </div>
           <div>
@@ -66,9 +69,9 @@ const Contact = () => {
             <textarea
               name="message"
               rows={4}
-              required
               placeholder="Tell us what’s on your mind..."
               className="w-full px-4 py-2 border border-border rounded-md bg-card text-foreground"
+              required
             />
           </div>
           <button
