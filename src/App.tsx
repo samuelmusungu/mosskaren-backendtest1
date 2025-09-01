@@ -13,6 +13,7 @@ import NotFound from "./pages/NotFound";
 import Contact from "@/pages/Contact";
 import ThankYou from "@/pages/ThankYou";
 import NewsletterConfirmation from "@/pages/NewsletterConfirmation";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -21,7 +22,6 @@ const App = () => (
       <Toaster />
       <Sonner />
       <>
-
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -36,17 +36,26 @@ const App = () => (
           </Routes>
         </BrowserRouter>
 
-        {/* Floating Reserve CTA */}
-        <div className="fixed bottom-6 right-6 z-50">
+        {/* Floating Reserve CTA + WhatsApp */}
+        <div className="fixed bottom-6 right-6 z-50 space-y-3">
           <a
             href="/reservations"
-            className="bg-primary text-white px-5 py-3 rounded-full shadow-lg hover:bg-primary/90 transition"
+            className="block bg-primary text-white px-5 py-3 rounded-full shadow-lg hover:bg-primary/90 transition"
           >
             Reserve Now
           </a>
+
+          <a
+            href="https://wa.me/254757436746"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block bg-green-500 text-white px-5 py-3 rounded-full shadow-lg hover:bg-green-600 transition"
+          >
+            💬 WhatsApp Us
+          </a>
         </div>
 
-        {/* Floating Chat Bubble */}
+        {/* Floating Chat Bubble (Contact Page Link) */}
         <div className="fixed bottom-6 left-6 z-50">
           <a
             href="/contact"
