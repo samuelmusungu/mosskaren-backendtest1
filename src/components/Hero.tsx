@@ -73,11 +73,6 @@ const Hero = () => {
             <Wine className="w-8 h-8 text-white" />
           </div>
         </div>
-
-        {/* Scroll Cue */}
-        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2">
-          <span className="text-white/70 animate-bounce text-sm">Scroll to explore ↓</span>
-        </div>
       </div>
     </section>
   );
