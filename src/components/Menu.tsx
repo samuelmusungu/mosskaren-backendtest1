@@ -8,7 +8,7 @@ const categories = [
         description: "Premium beef cuts grilled to perfection, served with ugali and sukuma wiki",
         price: "KSh 2,800",
         popular: true,
-        image: "https://images.unsplash.com/photo-1604908177522-3c6f3c3f1b4a?auto=format&fit=crop&w=600&q=80" // Nyama Choma with ugali
+        image: "https://unsplash.com/photos/gray-metal-tong-and-grilled-meat-with-fire-jeiqzOgwwKU?auto=format&fit=crop&w=600&q=80" // Nyama Choma with ugali
       },
       {
         name: "Pan-Seared Tilapia",
