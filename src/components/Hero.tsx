@@ -41,13 +41,12 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link to="/reservations">
               <Button
-                size="lg"
-                variant="premium"
-                aria-label="Reserve a table at The Moss Karen"
-                className="px-8 py-4 text-lg font-semibold animate-pulse hover:animate-none"
-              >
-                Reserve Your Table
-              </Button>
+  size="lg"
+  variant="premium"
+  className="px-8 py-4 text-lg font-semibold hover:bg-primary/90 transition"
+>
+  Reserve Your Table
+</Button>
             </Link>
             <Link to="/menu">
               <Button
