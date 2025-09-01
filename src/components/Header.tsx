@@ -1,30 +1,41 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X, MapPin, Phone } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
 
-  const closeMenu = () => {
-    setIsMenuOpen(false);
-  };
+  const closeMenu = () => setIsMenuOpen(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 10);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <header className="fixed top-0 w-full bg-background/95 backdrop-blur-md border-b border-border z-50">
+    <header className="fixed top-0 w-full bg-background/95 backdrop-blur-md border-b border-border z-50 transition-all duration-300">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-primary rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-lg">M</span>
-            </div>
+          <Link to="/" className="flex items-center space-x-3 group">
+            <img
+              src="/logo.png"
+              alt="The Moss Karen Logo"
+              className={`transition-all duration-300 ${
+                scrolled ? "h-8" : "h-10"
+              } w-auto group-hover:scale-105`}
+            />
             <div>
               <h1 className="text-xl font-bold text-foreground">The Moss Karen</h1>
               <p className="text-xs text-muted-foreground">Restaurant & Bar</p>
             </div>
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
@@ -71,6 +82,13 @@ const Header = () => {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="md:hidden mt-4 pb-4 border-t border-border">
+            <div className="flex justify-center mb-4">
+              <img
+                src="/logo.png"
+                alt="The Moss Karen Logo"
+                className="h-10 w-auto"
+              />
+            </div>
             <nav className="flex flex-col space-y-4 pt-4">
               <Link 
                 to="/"
