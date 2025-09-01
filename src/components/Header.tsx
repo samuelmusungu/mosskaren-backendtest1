@@ -20,7 +20,7 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 w-full bg-background/95 backdrop-blur-md border-b border-border z-50 transition-all duration-300">
-      <div className="container mx-auto px-4 py-4">
+      <div className="container mx-auto px-5 py-5">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 group">
@@ -28,7 +28,7 @@ const Header = () => {
               src="/logo.png"
               alt="The Moss Karen Logo"
               className={`transition-all duration-300 ${
-                scrolled ? "h-8" : "h-10"
+                scrolled ? "h-10" : "h-12"
               } w-auto group-hover:scale-105`}
             />
             <div>
