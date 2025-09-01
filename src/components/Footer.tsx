@@ -44,11 +44,11 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-4 h-4 opacity-80" />
-                <span className="text-sm">+254 700 123 456</span>
+                <span className="text-sm">+254 757 436 746</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 opacity-80" />
-                <span className="text-sm">info@themosskarren.com</span>
+                <span className="text-sm">musungusamuel@HighDesignAgency.co.ke</span>
               </div>
             </div>
           </div>
