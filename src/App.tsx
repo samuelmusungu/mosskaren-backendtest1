@@ -51,7 +51,7 @@ const App = () => (
             rel="noopener noreferrer"
             className="block bg-green-500 text-white px-5 py-3 rounded-full shadow-lg hover:bg-green-600 transition"
           >
-            💬 WhatsApp Us
+           WhatsApp Us
           </a>
         </div>
 
@@ -61,7 +61,7 @@ const App = () => (
             href="/contact"
             className="bg-white text-primary px-4 py-3 rounded-full shadow-lg border border-border hover:bg-white/90 transition"
           >
-            💬 Chat with Us
+            Chat with Us
           </a>
         </div>
       </>
