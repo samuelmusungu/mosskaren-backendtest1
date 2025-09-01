@@ -21,6 +21,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <>
+
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -30,7 +31,7 @@ const App = () => (
             <Route path="/reservations" element={<ReservationsPage />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/thank-you" element={<ThankYou />} />
-            <Route path="/newsletter-confirmation" element={<NewsletterConfirmation />} /> {/* Optional */}
+            <Route path="/newsletter-confirmation" element={<NewsletterConfirmation />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
