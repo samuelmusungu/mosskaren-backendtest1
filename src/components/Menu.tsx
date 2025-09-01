@@ -12,25 +12,29 @@ const Menu = () => {
           name: "Grilled Nyama Choma Platter",
           description: "Premium beef cuts grilled to perfection, served with ugali and sukuma wiki",
           price: "KSh 2,800",
-          popular: true
+          popular: true,
+          image: "https://lowcarbafrica.com/nyama-choma-kenyan-grilled-meat/"
         },
         {
           name: "Pan-Seared Tilapia",
           description: "Fresh Lake Victoria tilapia with coconut rice and steamed vegetables",
           price: "KSh 2,200",
-          popular: false
+          popular: false,
+          image: "https://www.preciouscore.com/pan-seared-tilapia/"
         },
         {
           name: "Chicken Tikka Masala",
           description: "Tender chicken in rich tomato curry sauce with basmati rice",
           price: "KSh 2,400",
-          popular: true
+          popular: true,
+          image: "https://www.recipetineats.com/chicken-tikka-masala/"
         },
         {
           name: "Vegetarian Pilau",
           description: "Aromatic spiced rice with seasonal vegetables and cashew nuts",
           price: "KSh 1,800",
-          popular: false
+          popular: false,
+          image: "https://foodaciously.com/recipe/kenyan-pilau"
         }
       ]
     },
@@ -42,25 +46,29 @@ const Menu = () => {
           name: "House Special Cocktail",
           description: "Signature blend with premium spirits and tropical fruits",
           price: "KSh 1,200",
-          popular: true
+          popular: true,
+          image: "https://www.bargpt.app/ai-cocktail-recipe/house-special"
         },
         {
           name: "Kenyan Wine Selection",
           description: "Carefully curated local wines from Naivasha vineyards",
           price: "KSh 3,500",
-          popular: false
+          popular: false,
+          image: "https://leleshwa.com/"
         },
         {
           name: "Fresh Fruit Mocktails",
           description: "Refreshing non-alcoholic beverages with seasonal fruits",
           price: "KSh 650",
-          popular: true
+          popular: true,
+          image: "https://mindfulmocktail.com/fruit-punch-mocktail/"
         },
         {
           name: "Premium Beer Collection",
           description: "Local and imported beers, perfectly chilled",
           price: "KSh 450",
-          popular: false
+          popular: false,
+          image: "https://www.bestofbritishbeer.co.uk/big-50-beer-collection.html"
         }
       ]
     },
@@ -72,25 +80,29 @@ const Menu = () => {
           name: "Chocolate Lava Cake",
           description: "Warm chocolate cake with molten center and vanilla ice cream",
           price: "KSh 950",
-          popular: true
+          popular: true,
+          image: "https://sallysbakingaddiction.com/chocolate-lava-cakes/"
         },
         {
           name: "Kenyan Coffee Selection",
           description: "Premium single-origin beans from the highlands",
           price: "KSh 350",
-          popular: false
+          popular: false,
+          image: "https://kahawa1893.com/products/kenyan-single-origin"
         },
         {
           name: "Tropical Fruit Platter",
           description: "Fresh seasonal fruits beautifully presented",
           price: "KSh 750",
-          popular: false
+          popular: false,
+          image: "https://www.twospoons.ca/how-to-make-the-ultimate-fruit-platter/"
         },
         {
           name: "Homemade Ice Cream",
           description: "Artisanal flavors made fresh daily",
           price: "KSh 450",
-          popular: true
+          popular: true,
+          image: "https://www.loveandlemons.com/homemade-ice-cream-recipe/"
         }
       ]
     }
@@ -127,6 +139,12 @@ const Menu = () => {
                 {category.items.map((item, itemIndex) => (
                   <Card key={itemIndex} className="bg-card border-border hover:shadow-elegant transition-all duration-300 hover:-translate-y-1">
                     <CardContent className="p-6">
+                      <img
+                        src={item.image}
+                        alt={item.name}
+                        className="w-full h-48 object-cover rounded-lg mb-4"
+                        loading="lazy"
+                      />
                       <div className="flex justify-between items-start mb-3">
                         <h4 className="text-xl font-semibold text-foreground flex items-center gap-2">
                           {item.name}
