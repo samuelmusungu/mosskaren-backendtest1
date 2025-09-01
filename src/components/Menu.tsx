@@ -13,28 +13,28 @@ const Menu = () => {
           description: "Premium beef cuts grilled to perfection, served with ugali and sukuma wiki",
           price: "KSh 2,800",
           popular: true,
-          image: "https://lowcarbafrica.com/nyama-choma-kenyan-grilled-meat/"
+          image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80"
         },
         {
           name: "Pan-Seared Tilapia",
           description: "Fresh Lake Victoria tilapia with coconut rice and steamed vegetables",
           price: "KSh 2,200",
           popular: false,
-          image: "https://www.preciouscore.com/pan-seared-tilapia/"
+          image: "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=600&q=80"
         },
         {
           name: "Chicken Tikka Masala",
           description: "Tender chicken in rich tomato curry sauce with basmati rice",
           price: "KSh 2,400",
           popular: true,
-          image: "https://www.recipetineats.com/chicken-tikka-masala/"
+          image: "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=600&q=80"
         },
         {
           name: "Vegetarian Pilau",
           description: "Aromatic spiced rice with seasonal vegetables and cashew nuts",
           price: "KSh 1,800",
           popular: false,
-          image: "https://foodaciously.com/recipe/kenyan-pilau"
+          image: "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?auto=format&fit=crop&w=600&q=80"
         }
       ]
     },
@@ -47,28 +47,28 @@ const Menu = () => {
           description: "Signature blend with premium spirits and tropical fruits",
           price: "KSh 1,200",
           popular: true,
-          image: "https://www.bargpt.app/ai-cocktail-recipe/house-special"
+          image: "https://images.unsplash.com/photo-1504674900247-ec6b0b1b798e?auto=format&fit=crop&w=600&q=80"
         },
         {
           name: "Kenyan Wine Selection",
           description: "Carefully curated local wines from Naivasha vineyards",
           price: "KSh 3,500",
           popular: false,
-          image: "https://leleshwa.com/"
+          image: "https://images.unsplash.com/photo-1514361892635-cebb9b6b9d14?auto=format&fit=crop&w=600&q=80"
         },
         {
           name: "Fresh Fruit Mocktails",
           description: "Refreshing non-alcoholic beverages with seasonal fruits",
           price: "KSh 650",
           popular: true,
-          image: "https://mindfulmocktail.com/fruit-punch-mocktail/"
+          image: "https://images.unsplash.com/photo-1464306076886-c17ce7849e2b?auto=format&fit=crop&w=600&q=80"
         },
         {
           name: "Premium Beer Collection",
           description: "Local and imported beers, perfectly chilled",
           price: "KSh 450",
           popular: false,
-          image: "https://www.bestofbritishbeer.co.uk/big-50-beer-collection.html"
+          image: "https://images.unsplash.com/photo-1504674900247-1a781979e8c0?auto=format&fit=crop&w=600&q=80"
         }
       ]
     },
@@ -81,28 +81,28 @@ const Menu = () => {
           description: "Warm chocolate cake with molten center and vanilla ice cream",
           price: "KSh 950",
           popular: true,
-          image: "https://sallysbakingaddiction.com/chocolate-lava-cakes/"
+          image: "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=600&q=80"
         },
         {
           name: "Kenyan Coffee Selection",
           description: "Premium single-origin beans from the highlands",
           price: "KSh 350",
           popular: false,
-          image: "https://kahawa1893.com/products/kenyan-single-origin"
+          image: "https://images.unsplash.com/photo-1504674900247-ec6b0b1b798e?auto=format&fit=crop&w=600&q=80"
         },
         {
           name: "Tropical Fruit Platter",
           description: "Fresh seasonal fruits beautifully presented",
           price: "KSh 750",
           popular: false,
-          image: "https://www.twospoons.ca/how-to-make-the-ultimate-fruit-platter/"
+          image: "https://images.unsplash.com/photo-1464306076886-c17ce7849e2b?auto=format&fit=crop&w=600&q=80"
         },
         {
           name: "Homemade Ice Cream",
           description: "Artisanal flavors made fresh daily",
           price: "KSh 450",
           popular: true,
-          image: "https://www.loveandlemons.com/homemade-ice-cream-recipe/"
+          image: "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=600&q=80"
         }
       ]
     }
