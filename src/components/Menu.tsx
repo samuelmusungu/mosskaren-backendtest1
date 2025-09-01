@@ -13,7 +13,7 @@ const Menu = () => {
           description: "Premium beef cuts grilled to perfection, served with ugali and sukuma wiki",
           price: "KSh 2,800",
           popular: true,
-          image: "https://images.unsplash.com/photo-1604908177522-3c6f3c3f1b4a?auto=format&fit=crop&w=600&q=80"
+          image: "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=600&q=80"
         },
         {
           name: "Pan-Seared Tilapia",
@@ -47,28 +47,28 @@ const Menu = () => {
           description: "Signature blend with premium spirits and tropical fruits",
           price: "KSh 1,200",
           popular: true,
-          image: "https://images.unsplash.com/photo-1590080877037-4c3f3f4e9c3a?auto=format&fit=crop&w=600&q=80"
+          image: "https://images.unsplash.com/photo-1571079504900-897d1a7c7d4b?auto=format&fit=crop&w=600&q=80"
         },
         {
           name: "Kenyan Wine Selection",
           description: "Carefully curated local wines from Naivasha vineyards",
           price: "KSh 3,500",
           popular: false,
-          image: "https://images.unsplash.com/photo-1584467735871-3c3f3f4e9c3a?auto=format&fit=crop&w=600&q=80"
+          image: "https://images.unsplash.com/photo-1606788075761-6c0f7f6b7f6e?auto=format&fit=crop&w=600&q=80"
         },
         {
           name: "Fresh Fruit Mocktails",
           description: "Refreshing non-alcoholic beverages with seasonal fruits",
           price: "KSh 650",
           popular: true,
-          image: "https://images.unsplash.com/photo-1613145993481-3c3f3f4e9c3a?auto=format&fit=crop&w=600&q=80"
+          image: "https://images.unsplash.com/photo-1581579185169-4c3f3f4e9c3a?auto=format&fit=crop&w=600&q=80"
         },
         {
           name: "Premium Beer Collection",
           description: "Local and imported beers, perfectly chilled",
           price: "KSh 450",
           popular: false,
-          image: "https://images.unsplash.com/photo-1584467735871-3c3f3f4e9c3a?auto=format&fit=crop&w=600&q=80"
+          image: "https://images.unsplash.com/photo-1590080877037-4c3f3f4e9c3a?auto=format&fit=crop&w=600&q=80"
         }
       ]
     },
@@ -81,28 +81,28 @@ const Menu = () => {
           description: "Warm chocolate cake with molten center and vanilla ice cream",
           price: "KSh 950",
           popular: true,
-          image: "https://images.unsplash.com/photo-1605478371443-3c3f3f4e9c3a?auto=format&fit=crop&w=600&q=80"
+          image: "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=600&q=80"
         },
         {
           name: "Kenyan Coffee Selection",
           description: "Premium single-origin beans from the highlands",
           price: "KSh 350",
           popular: false,
-          image: "https://images.unsplash.com/photo-1584467735871-3c3f3f4e9c3a?auto=format&fit=crop&w=600&q=80"
+          image: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=600&q=80"
         },
         {
           name: "Tropical Fruit Platter",
           description: "Fresh seasonal fruits beautifully presented",
           price: "KSh 750",
           popular: false,
-          image: "https://images.unsplash.com/photo-1613145993481-3c3f3f4e9c3a?auto=format&fit=crop&w=600&q=80"
+          image: "https://images.unsplash.com/photo-1576402187877-9f7f3f4e9c3a?auto=format&fit=crop&w=600&q=80"
         },
         {
           name: "Homemade Ice Cream",
           description: "Artisanal flavors made fresh daily",
           price: "KSh 450",
           popular: true,
-          image: "https://images.unsplash.com/photo-1605478371443-3c3f3f4e9c3a?auto=format&fit=crop&w=600&q=80"
+          image: "https://images.unsplash.com/photo-1590080877037-4c3f3f4e9c3a?auto=format&fit=crop&w=600&q=80"
         }
       ]
     }
