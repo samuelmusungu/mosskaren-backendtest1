@@ -57,15 +57,30 @@ const App = () => (
   </a>
 </div>
 
-        {/* Floating Chat Bubble (Contact Page Link) */}
-        <div className="fixed bottom-6 left-6 z-50">
-          <a
-            href="/contact"
-            className="bg-white text-primary px-4 py-3 rounded-full shadow-lg border border-border hover:bg-white/90 transition"
-          >
-            Email Us
-          </a>
-        </div>
+        {/* Floating Email Icon */}
+<div className="fixed bottom-6 left-6 z-50">
+  <a
+    href="/contact"
+    className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center shadow-lg hover:bg-primary/90 transition"
+    aria-label="Email"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      width="24"
+      height="24"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-18 8h18a2 2 0 002-2V8a2 2 0 00-2-2H3a2 2 0 00-2 2v6a2 2 0 002 2z"
+      />
+    </svg>
+  </a>
+</div>
       </>
     </TooltipProvider>
   </QueryClientProvider>
