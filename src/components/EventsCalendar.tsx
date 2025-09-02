@@ -1,7 +1,5 @@
 const events = [
   { date: "Sat, Sept 7", title: "Live Jazz Night" },
-  { date: "Fri, Sept 13", title: "Cocktail Masterclass" },
-  { date: "Sun, Sept 15", title: "Brunch & Acoustic" },
 ];
 
 const EventsCalendar = () => {

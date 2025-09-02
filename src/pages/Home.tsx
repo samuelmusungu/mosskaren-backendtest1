@@ -1,14 +1,12 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Gallery from "@/components/Gallery";
-import Testimonials from "@/components/Testimonials";
 import FeaturedMenu from "@/components/FeaturedMenu";
 import TeamSpotlight from "@/components/TeamSpotlight";
 import EventsCalendar from "@/components/EventsCalendar";
 import LocationMap from "@/components/LocationMap";
 import SocialWall from "@/components/SocialWall";
-import LoyaltyTeaser from "@/components/LoyaltyTeaser";
-import BrandStory from "@/components/BrandStory";
+import Testimonials from "@/components/Testimonials";
 import Footer from "@/components/Footer";
 
 const Home = () => {
@@ -17,15 +15,13 @@ const Home = () => {
       <Header />
       <main className="flex-grow">
         <Hero />
+        <Gallery /> {/* Moved up */}
         <FeaturedMenu />
-        <Gallery />
-        <BrandStory />
         <TeamSpotlight />
-        <Testimonials />
         <EventsCalendar />
         <LocationMap />
         <SocialWall />
-        <LoyaltyTeaser />
+        <Testimonials /> {/* Moved down */}
       </main>
       <Footer />
     </div>
