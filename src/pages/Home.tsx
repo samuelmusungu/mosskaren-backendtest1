@@ -4,9 +4,9 @@ import Gallery from "@/components/Gallery";
 import FeaturedMenu from "@/components/FeaturedMenu";
 import TeamSpotlight from "@/components/TeamSpotlight";
 import EventsCalendar from "@/components/EventsCalendar";
-import LocationMap from "@/components/LocationMap";
 import SocialWall from "@/components/SocialWall";
 import Testimonials from "@/components/Testimonials";
+import LocationMap from "@/components/LocationMap";
 import Footer from "@/components/Footer";
 
 const Home = () => {
@@ -15,13 +15,13 @@ const Home = () => {
       <Header />
       <main className="flex-grow">
         <Hero />
-        <Gallery /> {/* Moved up */}
+        <Gallery />
         <FeaturedMenu />
         <TeamSpotlight />
         <EventsCalendar />
-        <LocationMap />
+        <Testimonials />
+        <LocationMap /> {/* Moved below Testimonials */}
         <SocialWall />
-        <Testimonials /> {/* Moved down */}
       </main>
       <Footer />
     </div>
