@@ -1,6 +1,6 @@
-import express from "express";
-import cors from "cors";
-import { PrismaClient } from "@prisma/client";
+const express = require("express");
+const cors = require("cors");
+const { PrismaClient } = require("@prisma/client");
 
 const app = express();
 const prisma = new PrismaClient();
@@ -83,4 +83,4 @@ app.post("/contact", async (req, res) => {
 });
 
 // ✅ Export the app for Vercel
-export default app;
+module.exports = app;
