@@ -19,8 +19,14 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="fixed top-0 w-full bg-background/95 backdrop-blur-md border-b border-border z-50 transition-all duration-300">
-      <div className="container mx-auto px-5 py-5">
+    <header
+      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+        scrolled
+          ? "bg-white/90 shadow-md backdrop-blur-md"
+          : "bg-gradient-to-r from-blue-50 via-white to-orange-50 backdrop-blur-md"
+      }`}
+    >
+      <div className="container mx-auto px-5 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 group">
@@ -39,87 +45,66 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <Link 
-              to="/"
-              className={`text-foreground hover:text-primary transition-colors ${location.pathname === '/' ? 'text-primary font-semibold' : ''}`}
-            >
-              Home
-            </Link>
-            <Link 
-              to="/about"
-              className={`text-foreground hover:text-primary transition-colors ${location.pathname === '/about' ? 'text-primary font-semibold' : ''}`}
-            >
-              About
-            </Link>
-            <Link 
-              to="/menu"
-              className={`text-foreground hover:text-primary transition-colors ${location.pathname === '/menu' ? 'text-primary font-semibold' : ''}`}
-            >
-              Menu
-            </Link>
-            <Link 
-              to="/location"
-              className={`text-foreground hover:text-primary transition-colors ${location.pathname === '/location' ? 'text-primary font-semibold' : ''}`}
-            >
-              Location
-            </Link>
+            {["Home", "About", "Menu", "Location"].map((item) => {
+              const path = `/${item.toLowerCase()}`;
+              return (
+                <Link
+                  key={item}
+                  to={path === "/home" ? "/" : path}
+                  className={`text-sm font-medium text-muted-foreground hover:text-orange-500 transition ${
+                    location.pathname === path || (path === "/" && location.pathname === "/")
+                      ? "text-orange-500 font-semibold"
+                      : ""
+                  }`}
+                >
+                  {item}
+                </Link>
+              );
+            })}
             <Link to="/reservations">
-              <Button className="bg-secondary hover:bg-secondary/90">
+              <Button className="bg-orange-500 hover:bg-orange-600 transition-transform hover:scale-105">
                 Reserve Table
               </Button>
             </Link>
           </nav>
 
           {/* Mobile Menu Button */}
-          <button
-            className="md:hidden"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
+          <button className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
 
+        {/* Location Pin */}
+        <div className="flex items-center justify-center mt-2 text-sm text-muted-foreground">
+          <svg className="w-4 h-4 text-orange-500 animate-bounce mr-1" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M10 0C6.686 0 4 2.686 4 6c0 4.25 6 12 6 12s6-7.75 6-12c0-3.314-2.686-6-6-6zM10 8a2 2 0 110-4 2 2 0 010 4z" />
+          </svg>
+          Karen Plains, Nairobi
+        </div>
+
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 border-t border-border">
-            <div className="flex justify-center mb-4">
-              <img
-                src="/logo.png"
-                alt="The Moss Karen Logo"
-                className="h-10 w-auto"
-              />
-            </div>
-            <nav className="flex flex-col space-y-4 pt-4">
-              <Link 
-                to="/"
-                onClick={closeMenu}
-                className={`text-left text-foreground hover:text-primary transition-colors ${location.pathname === '/' ? 'text-primary font-semibold' : ''}`}
-              >
-                Home
-              </Link>
-              <Link 
-                to="/about"
-                onClick={closeMenu}
-                className={`text-left text-foreground hover:text-primary transition-colors ${location.pathname === '/about' ? 'text-primary font-semibold' : ''}`}
-              >
-                About
-              </Link>
-              <Link 
-                to="/menu"
-                onClick={closeMenu}
-                className={`text-left text-foreground hover:text-primary transition-colors ${location.pathname === '/menu' ? 'text-primary font-semibold' : ''}`}
-              >
-                Menu
-              </Link>
-              <Link 
-                to="/location"
-                onClick={closeMenu}
-                className={`text-left text-foreground hover:text-primary transition-colors ${location.pathname === '/location' ? 'text-primary font-semibold' : ''}`}
-              >
-                Location
-              </Link>
+          <div className="md:hidden mt-4 pb-4 border-t border-border animate-fade-in">
+            <nav className="flex flex-col space-y-4 pt-4 text-center">
+              {["Home", "About", "Menu", "Location"].map((item) => {
+                const path = `/${item.toLowerCase()}`;
+                return (
+                  <Link
+                    key={item}
+                    to={path === "/home" ? "/" : path}
+                    onClick={closeMenu}
+                    className={`text-sm text-muted-foreground hover:text-orange-500 transition ${
+                      location.pathname === path || (path === "/" && location.pathname === "/")
+                        ? "text-orange-500 font-semibold"
+                        : ""
+                    }`}
+                  >
+                    {item}
+                  </Link>
+                );
+              })}
               <Link to="/reservations" onClick={closeMenu}>
-                <Button className="bg-secondary hover:bg-secondary/90 w-fit">
+                <Button className="bg-orange-500 hover:bg-orange-600 w-fit mx-auto mt-2">
                   Reserve Table
                 </Button>
               </Link>

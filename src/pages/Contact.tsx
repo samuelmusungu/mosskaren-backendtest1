@@ -5,26 +5,30 @@ import { toast } from "sonner";
 const Contact = () => {
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
 
-    const form = e.currentTarget;
-    const data = new FormData(form);
-
     try {
-      const res = await fetch("https://formspree.io/f/mrbalakw", {
+      const res = await fetch("http://localhost:4000/contact", {
         method: "POST",
-        body: data,
-        headers: {
-          Accept: "application/json",
-        },
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
       });
 
       if (res.ok) {
         toast.success("Message sent successfully!");
-        form.reset();
+        setForm({ name: "", email: "", message: "" });
         navigate("/thank-you");
       } else {
         toast.error("Something went wrong. Please try again.");
@@ -49,6 +53,8 @@ const Contact = () => {
             <input
               type="text"
               name="name"
+              value={form.name}
+              onChange={handleChange}
               placeholder="Your name"
               className="w-full px-4 py-2 border border-border rounded-md bg-card text-foreground"
               required
@@ -59,6 +65,8 @@ const Contact = () => {
             <input
               type="email"
               name="email"
+              value={form.email}
+              onChange={handleChange}
               placeholder="you@example.com"
               className="w-full px-4 py-2 border border-border rounded-md bg-card text-foreground"
               required
@@ -68,6 +76,8 @@ const Contact = () => {
             <label className="block text-sm font-medium text-muted-foreground mb-1">Message</label>
             <textarea
               name="message"
+              value={form.message}
+              onChange={handleChange}
               rows={4}
               placeholder="Tell us what’s on your mind..."
               className="w-full px-4 py-2 border border-border rounded-md bg-card text-foreground"
