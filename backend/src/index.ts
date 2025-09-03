@@ -30,6 +30,7 @@ app.post("/menu", async (req, res) => {
     res.status(500).json({ error: "Failed to create menu item" });
   }
 });
+
 // GET all events
 app.get("/events", async (req, res) => {
   try {
@@ -57,6 +58,7 @@ app.post("/events", async (req, res) => {
     res.status(500).json({ error: "Failed to create event" });
   }
 });
+
 // GET all contact messages
 app.get("/contact", async (req, res) => {
   try {
@@ -80,6 +82,5 @@ app.post("/contact", async (req, res) => {
   }
 });
 
-app.listen(4000, () => {
-  console.log("✅ Moss Karen backend running on http://localhost:4000");
-});
+// ✅ Export the app for Vercel
+export default app;
